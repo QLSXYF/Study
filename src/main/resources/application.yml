@@ -1,0 +1,15 @@
+server:
+  port: 8009
+  
+spring:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8&autoReconnect=true
+    username: root
+    password: root
+ 
+  
+mybatis:
+    type-aliases-package: com.example.mybatis.model
+    config-location: classpath:mybatis.xml
+    mapperLocations: classpath:mapper/*.xml
